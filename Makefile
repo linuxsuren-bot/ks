@@ -10,7 +10,9 @@ simple-build:
 build: pre-build simple-build
 	upx bin/ks
 
-linux:build-linux
+linux:
+	CGO_ENABLE=0 GOOS=linux GOARCH=amd64 go build $(BUILDFLAGS) -o bin/linux/ks
+	upx bin/linux/ks
 
 build-linux: pre-build
 	CGO_ENABLE=0 GOOS=linux GOARCH=amd64 go build $(BUILDFLAGS) -o bin/linux/ks
