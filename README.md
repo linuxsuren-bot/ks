@@ -7,7 +7,7 @@
 
 # ks
 
-`ks` is a tool which makes it be easy to work with [KubeSphere](https://github.com/kubesphere/kubesphere).
+`ks` is a tool1 which makes it be easy to work with [KubeSphere](https://github.com/kubesphere/kubesphere).
 
 # Get started
 
